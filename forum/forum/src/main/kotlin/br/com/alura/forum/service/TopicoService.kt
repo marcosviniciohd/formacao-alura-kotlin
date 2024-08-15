@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
-class TopicoService(private var topicos: List<Topico>) {
+class TopicoService(
+    private var topicos: List<Topico>
+) {
 
     init {
         val topico = Topico(
@@ -55,6 +57,86 @@ class TopicoService(private var topicos: List<Topico>) {
                 id = 1,
                 nome = "Antonio Silva",
                 email = "antonio.silva@gmail.com"
+            )
+        )
+
+        val topico4 = Topico(
+            id = 4,
+            titulo = "Duvida4",
+            mensagem = "Duvida com Spring Security",
+            curso = Curso(
+                id = 2,
+                nome = "Java",
+                categoria = "Programação"
+            ),
+            autor = Usuario(
+                id = 2,
+                nome = "João Pereira",
+                email = "joao.pereira@gmail.com"
+            )
+        )
+
+        val topico5 = Topico(
+            id = 5,
+            titulo = "Duvida5",
+            mensagem = "Duvida com Spring MVC",
+            curso = Curso(
+                id = 3,
+                nome = "Python",
+                categoria = "Programação"
+            ),
+            autor = Usuario(
+                id = 3,
+                nome = "Ana Souza",
+                email = "ana.souza@gmail.com"
+            )
+        )
+
+        val topico6 = Topico(
+            id = 6,
+            titulo = "Duvida6",
+            mensagem = "Duvida com Spring Cloud",
+            curso = Curso(
+                id = 4,
+                nome = "JavaScript",
+                categoria = "Programação"
+            ),
+            autor = Usuario(
+                id = 4,
+                nome = "Carlos Lima",
+                email = "carlos.lima@gmail.com"
+            )
+        )
+
+        val topico7 = Topico(
+            id = 7,
+            titulo = "Duvida7",
+            mensagem = "Duvida com Spring Batch",
+            curso = Curso(
+                id = 5,
+                nome = "Ruby",
+                categoria = "Programação"
+            ),
+            autor = Usuario(
+                id = 5,
+                nome = "Mariana Costa",
+                email = "mariana.costa@gmail.com"
+            )
+        )
+
+        val topico8 = Topico(
+            id = 8,
+            titulo = "Duvida8",
+            mensagem = "Duvida com Spring Integration",
+            curso = Curso(
+                id = 6,
+                nome = "C#",
+                categoria = "Programação"
+            ),
+            autor = Usuario(
+                id = 6,
+                nome = "Pedro Almeida",
+                email = "pedro.almeida@gmail.com"
             )
         )
 
