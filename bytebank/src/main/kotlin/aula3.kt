@@ -12,6 +12,7 @@ fun main() {
 
     deposita(conta1, 100.0)
     deposita(conta2, 200.0)
+    deposita(conta1, 0.0)
     println("Saldo da conta ${conta1.numero}, é de: ${conta1.saldo} reais")
     println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
 

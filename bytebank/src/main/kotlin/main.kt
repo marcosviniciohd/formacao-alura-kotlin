@@ -25,3 +25,11 @@ class Conta {
         return "Conta(titular='$titular', numero=$numero, saldo=$saldo)"
     }
 }
+
+fun deposita(conta: Conta, valor: Double) {
+    if (valor > 0) {
+        conta.saldo += valor
+    } else {
+        println("O valor do depósito deve ser maior que zero.")
+    }
+}
