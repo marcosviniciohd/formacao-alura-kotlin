@@ -20,16 +20,24 @@ class Conta {
     var numero = 0
     var saldo = 0.0
 
+    fun deposita(valor: Double) {
+        if (valor > 0) {
+            this.saldo += valor
+        } else {
+            println("O valor do depósito deve ser maior que zero.")
+        }
+    }
+
+    fun saca(valor: Double) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor
+        } else {
+            println("Saldo insuficiente.")
+        }
+    }
 
     override fun toString(): String {
         return "Conta(titular='$titular', numero=$numero, saldo=$saldo)"
     }
 }
 
-fun deposita(conta: Conta, valor: Double) {
-    if (valor > 0) {
-        conta.saldo += valor
-    } else {
-        println("O valor do depósito deve ser maior que zero.")
-    }
-}

@@ -10,10 +10,20 @@ fun main() {
     conta2.numero = 1007
     conta2.saldo = 00.0
 
-    deposita(conta1, 100.0)
-    deposita(conta2, 200.0)
-    deposita(conta1, 0.0)
+    conta1.deposita(100.0)
+    conta2.deposita(200.0)
+    conta1.deposita(0.0)
     println("Saldo da conta ${conta1.numero}, é de: ${conta1.saldo} reais")
+    println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
+
+    println("=================================================================")
+    println("=================================================================")
+    println("Realizando saque na conta ${conta1.numero}")
+    conta1.saca(150.0)
+    println("Saldo da conta ${conta1.numero}, é de: ${conta1.saldo} reais")
+
+    println("Realizando saque na conta ${conta2.numero}")
+    conta2.saca(150.0)
     println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
 
 }
