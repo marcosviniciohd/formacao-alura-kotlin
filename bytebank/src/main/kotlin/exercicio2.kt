@@ -5,14 +5,14 @@ fun main() {
 
     contaFran.titular = "Fran"
     contaFran.numero = 1000
-    contaFran.saldo = 200.0
+    contaFran.setSaldo(200.0)
 
     contaJoao.titular = "João"
     contaJoao.numero = 1001
-    contaJoao.saldo = 300.0
+    contaJoao.setSaldo(300.0)
 
-    println("Titular: ${contaFran.titular}, número da conta: ${contaFran.numero}, saldo da conta: ${contaFran.saldo}.")
-    println("Titular: ${contaJoao.titular}, número da conta: ${contaJoao.numero}, saldo da conta: ${contaJoao.saldo}.")
+    println("Titular: ${contaFran.titular}, número da conta: ${contaFran.numero}, saldo da conta: ${contaFran.getSaldo()}.")
+    println("Titular: ${contaJoao.titular}, número da conta: ${contaJoao.numero}, saldo da conta: ${contaJoao.getSaldo()}.")
 
     val numeroX = 10
     var numeroY = numeroX
