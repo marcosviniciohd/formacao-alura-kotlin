@@ -26,4 +26,19 @@ fun main() {
     conta2.saca(150.0)
     println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
 
+    println("=================================================================")
+    println("=================================================================")
+
+    println("Realizando transferência da conta ${conta1.numero} para a conta ${conta2.numero}")
+    conta1.transfere(50.0, conta2)
+    println("Saldo da conta ${conta1.numero}, é de: ${conta1.saldo} reais")
+    println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
+
+    println("=================================================================")
+    println("=================================================================")
+    println("Realizando transferência da conta ${conta2.numero} para a conta ${conta1.numero}")
+    conta2.transfere(50.0, conta1)
+    println("Saldo da conta ${conta1.numero}, é de: ${conta1.saldo} reais")
+    println("Saldo da conta ${conta2.numero}, é de: ${conta2.saldo} reais")
+
 }
