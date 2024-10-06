@@ -36,14 +36,12 @@ class Conta {
         }
     }
 
-    fun transfere(valor: Double, contaDestino: Conta): Boolean {
+    fun transfere(valor: Double, contaDestino: Conta) {
         if (this.saldo >= valor) {
-            contaDestino.saldo += valor
             this.saldo -= valor
-            return true
+            contaDestino.saldo += valor
         } else {
             println("O valor da transferência deve ser igual ou menor que o saldo da conta")
-            return false
         }
     }
 
