@@ -1,0 +1,4 @@
+package poo
+
+class Funcionario {
+}
