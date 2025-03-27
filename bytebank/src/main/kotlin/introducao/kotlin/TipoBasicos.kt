@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun main() {
 //   val d: Int
 //    10.also { d = it }

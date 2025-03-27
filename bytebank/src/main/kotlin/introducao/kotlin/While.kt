@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun comerUmBolo() = println("Comer um bolo")
 fun assarUmBolo() = println("Assar um bolo")
 

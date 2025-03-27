@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun main() {
     val cakes = listOf("carrot", "cheese", "chocolate")
 

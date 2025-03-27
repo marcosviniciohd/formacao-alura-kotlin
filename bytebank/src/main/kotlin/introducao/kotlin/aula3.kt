@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun main() {
     println("Bem Vindo ao Bytebank")
     val conta1 = Conta("Marcos Vinício", 1006)

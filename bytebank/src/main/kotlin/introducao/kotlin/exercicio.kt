@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun main() {
     println("Exercicio 1")
     var numero1 = 10

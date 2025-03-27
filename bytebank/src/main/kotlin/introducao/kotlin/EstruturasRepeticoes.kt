@@ -1,3 +1,5 @@
+package introducao.kotlin
+
 fun main() {
     cases("Hello")
     cases(1)
